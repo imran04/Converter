@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.BinaryText = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.PlainText = new System.Windows.Forms.TextBox();
+            this.BinaryText2Text = new System.Windows.Forms.Button();
+            this.Text2BinaryText = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -47,32 +47,32 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 217);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(463, 151);
-            this.textBox2.TabIndex = 1;
+            this.PlainText.Location = new System.Drawing.Point(13, 217);
+            this.PlainText.Multiline = true;
+            this.PlainText.Name = "textBox2";
+            this.PlainText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.PlainText.Size = new System.Drawing.Size(463, 151);
+            this.PlainText.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(165, 374);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Binary to Text";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BinaryText2Text.Location = new System.Drawing.Point(165, 374);
+            this.BinaryText2Text.Name = "button1";
+            this.BinaryText2Text.Size = new System.Drawing.Size(146, 23);
+            this.BinaryText2Text.TabIndex = 2;
+            this.BinaryText2Text.Text = "Binary to Text";
+            this.BinaryText2Text.UseVisualStyleBackColor = true;
+            this.BinaryText2Text.Click += new System.EventHandler(this.BinaryText2Text_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(317, 374);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Text to Binary";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Text2BinaryText.Location = new System.Drawing.Point(317, 374);
+            this.Text2BinaryText.Name = "button2";
+            this.Text2BinaryText.Size = new System.Drawing.Size(147, 23);
+            this.Text2BinaryText.TabIndex = 3;
+            this.Text2BinaryText.Text = "Text to Binary";
+            this.Text2BinaryText.UseVisualStyleBackColor = true;
+            this.Text2BinaryText.Click += new System.EventHandler(this.Text2BinaryText_Click);
             // 
             // label1
             // 
@@ -99,9 +99,9 @@
             this.ClientSize = new System.Drawing.Size(485, 409);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Text2BinaryText);
+            this.Controls.Add(this.BinaryText2Text);
+            this.Controls.Add(this.PlainText);
             this.Controls.Add(this.BinaryText);
             this.Name = "App";
             this.Text = "Binary To Text and Vice Versa";
@@ -113,11 +113,10 @@
         #endregion
 
         private System.Windows.Forms.TextBox BinaryText;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox PlainText;
+        private System.Windows.Forms.Button BinaryText2Text;
+        private System.Windows.Forms.Button Text2BinaryText;
+     
     }
 }
 

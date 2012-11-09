@@ -16,7 +16,7 @@ namespace converter
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BinaryText2Text_Click(object sender, EventArgs e)
         {
             string Binary = BinaryText.Text;
             string Output="";
@@ -44,13 +44,13 @@ namespace converter
                 
                 Output += (char)i;
             }
-            textBox2.Text = Output;
+            PlainText.Text = Output;
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Text2BinaryText_Click(object sender, EventArgs e)
         {
-            string t = textBox2.Text;
+            string t = PlainText.Text;
             string o = "";
           
             foreach (char i in t)
