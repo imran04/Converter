@@ -50,23 +50,24 @@ namespace converter
 
         private void Text2BinaryText_Click(object sender, EventArgs e)
         {
-            string t = PlainText.Text;
-            string o = "";
+            string Plain = PlainText.Text;
+            string OutPut = "";
           
-            foreach (char i in t)
+            foreach (char i in Plain)
             {
-                string s = "";
-                int b = (int)i;
+                string Single = "";
+                int IntegerVal = (int)i;
                for (int tt=0;tt<8;tt++)
                 {
-                    s += (b % 2).ToString();
-                    b=b/2;
+                    Single += (IntegerVal % 2).ToString();
+                    IntegerVal=IntegerVal/2;
                 }
+                //reversing
                 for (int ip = 0; ip < 8; ip++)
-                    o += s[7 - ip];
-                o += " ";
+                    OutPut += Single[7 - ip];
+                OutPut += " ";
             }
-            BinaryText.Text = o;
+            BinaryText.Text = OutPut;
         }
     }
 }
