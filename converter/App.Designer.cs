@@ -32,8 +32,8 @@
             this.PlainText = new System.Windows.Forms.TextBox();
             this.BinaryText2Text = new System.Windows.Forms.Button();
             this.Text2BinaryText = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.BianryLabel = new System.Windows.Forms.Label();
+            this.PlainTextLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BinaryText
@@ -76,29 +76,29 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Binary Text";
+            this.BianryLabel.AutoSize = true;
+            this.BianryLabel.Location = new System.Drawing.Point(12, 34);
+            this.BianryLabel.Name = "label1";
+            this.BianryLabel.Size = new System.Drawing.Size(60, 13);
+            this.BianryLabel.TabIndex = 4;
+            this.BianryLabel.Text = "Binary Text";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 196);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Text";
+            this.PlainTextLabel.AutoSize = true;
+            this.PlainTextLabel.Location = new System.Drawing.Point(15, 196);
+            this.PlainTextLabel.Name = "label2";
+            this.PlainTextLabel.Size = new System.Drawing.Size(28, 13);
+            this.PlainTextLabel.TabIndex = 5;
+            this.PlainTextLabel.Text = "Text";
             // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 409);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.PlainTextLabel);
+            this.Controls.Add(this.BianryLabel);
             this.Controls.Add(this.Text2BinaryText);
             this.Controls.Add(this.BinaryText2Text);
             this.Controls.Add(this.PlainText);
@@ -116,7 +116,8 @@
         private System.Windows.Forms.TextBox PlainText;
         private System.Windows.Forms.Button BinaryText2Text;
         private System.Windows.Forms.Button Text2BinaryText;
-     
+        private System.Windows.Forms.Label BianryLabel;
+        private System.Windows.Forms.Label PlainTextLabel;
     }
 }
 
